@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "naumovs.color-highlight",
+    "streetsidesoftware.code-spell-checker",
+    "coenraads.bracket-pair-colorizer-2",
+    "oderwat.indent-rainbow",
+    "esbenp.prettier-vscode",
+    "jpoissonnier.vscode-styled-components",
+    "gruntfuggly.todo-tree"
+  ]
+}
