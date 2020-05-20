@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import './App.css'
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom'
-import { routes } from 'routes'
+import { useRoutes } from 'routes'
 
 const Div = styled.div`
   width: 100vw;
@@ -10,6 +10,7 @@ const Div = styled.div`
   text-align: center;
 `
 const App: React.FC = () => {
+  const routes = useRoutes()
   return (
     <Router>
       <Div>
