@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
-import {Tip} from 'Tips'
-import {Button} from 'antd'
 import './App.css'
+import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { routes } from 'routes'
 
 const Div = styled.div`
   width: 100vw;
@@ -10,13 +10,19 @@ const Div = styled.div`
   text-align: center;
 `
 const App: React.FC = () => {
-  const [tipStatus, setTipStatus] = useState(false)
   return (
-    <Div>
-      <h1>Hello BoilerPlate</h1>
-      <Button type="primary" onClick={()=>setTipStatus(!tipStatus)}>Show Tips</Button>
-      {tipStatus && <Tip />}
-    </Div>
+    <Router>
+      <Div>
+        <h1>Hello BoilerPlate</h1>
+        <Link to="/tip1" style={{marginRight: 30}}>Show Vscode Tips</Link>
+        <Link to="/tip2">Show Javascript Tips</Link>
+        <Switch>
+          {routes.map(d => (
+            <Route key={d.path} component={d.component} {...d} />
+          ))}
+        </Switch>
+      </Div>
+    </Router>
   )
 }
 export default App

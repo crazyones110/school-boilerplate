@@ -194,6 +194,11 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/history@*":
+  version "4.7.6"
+  resolved "https://registry.npm.taobao.org/@types/history/download/@types/history-4.7.6.tgz#ed8fc802c45b8e8f54419c2d054e55c9ea344356"
+  integrity sha1-7Y/IAsRbjo9UQZwtBU5Vyeo0Q1Y=
+
 "@types/hoist-non-react-statics@*":
   version "3.3.1"
   resolved "https://registry.npm.taobao.org/@types/hoist-non-react-statics/download/@types/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
@@ -234,6 +239,23 @@
   resolved "https://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.62.10.tgz?cache=0&sync_timestamp=1589563610708&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact-native%2Fdownload%2F%40types%2Freact-native-0.62.10.tgz#82c481df21db4e7460755dc3fc7091e333a1d2bd"
   integrity sha1-gsSB3yHbTnRgdV3D/HCR4zOh0r0=
   dependencies:
+    "@types/react" "*"
+
+"@types/react-router-dom@^5.1.5":
+  version "5.1.5"
+  resolved "https://registry.npm.taobao.org/@types/react-router-dom/download/@types/react-router-dom-5.1.5.tgz?cache=0&sync_timestamp=1588201635740&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact-router-dom%2Fdownload%2F%40types%2Freact-router-dom-5.1.5.tgz#7c334a2ea785dbad2b2dcdd83d2cf3d9973da090"
+  integrity sha1-fDNKLqeF260rLc3YPSzz2Zc9oJA=
+  dependencies:
+    "@types/history" "*"
+    "@types/react" "*"
+    "@types/react-router" "*"
+
+"@types/react-router@*":
+  version "5.1.7"
+  resolved "https://registry.npm.taobao.org/@types/react-router/download/@types/react-router-5.1.7.tgz#e9d12ed7dcfc79187e4d36667745b69a5aa11556"
+  integrity sha1-6dEu19z8eRh+TTZmd0W2mlqhFVY=
+  dependencies:
+    "@types/history" "*"
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^16.9.35":
